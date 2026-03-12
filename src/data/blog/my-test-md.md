@@ -2,10 +2,14 @@
 title: "my-test-md"
 publishedAt: "2026-03-12T04:26:34.155Z"
 status: "published"
-author:
-  name: "lorilu"
-  picture: "https://avatars.githubusercontent.com/u/77368761?v=4"
-slug: "my-test-md"
+author: lorilu
+publishedAt: 2023-07-20T15:33:05.569Z
+slug: my-test-md
+featured: false
+draft: false
+tags:
+  - FAQ
+this is my test md
 ---
 
 this is my test md
