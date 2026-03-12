@@ -1,15 +1,14 @@
 ---
-title: "my-test-md"
-publishedAt: "2026-03-12T04:26:34.155Z"
-status: "published"
-author: lorilu
-publishedAt: 2023-07-20T15:33:05.569Z
-slug: my-test-md
+title: mytestmd
+author: Sat Naing
+pubDatetime: 2023-07-20T15:33:05.569Z
+slug: how-to-update-dependencies
 featured: false
 draft: false
+ogImage: ../../assets/images/forrest-gump-quote.png
 tags:
   - FAQ
-this is my test md
+description: How to update project dependencies and AstroPaper template.
 ---
 
 this is my test md
