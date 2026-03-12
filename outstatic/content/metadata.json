@@ -1,6 +1,6 @@
 {
-  "commit": "ac23c7c2ea22cb13a922b2e7420c26fb06f79167",
-  "generated": "2026-03-12T03:29:55.965Z",
+  "commit": "c0771726e140ca6fe63f669d425a47a03839f0b0",
+  "generated": "2026-03-12T03:31:55.775Z",
   "metadata": [
     {
       "__outstatic": {
@@ -33,6 +33,22 @@
       "slug": "test-md",
       "status": "published",
       "title": "test-md"
+    },
+    {
+      "__outstatic": {
+        "commit": "c0771726e140ca6fe63f669d425a47a03839f0b0",
+        "hash": "4195007526",
+        "path": "src/data/blog/test-md-md.md"
+      },
+      "author": {
+        "name": "lorilu",
+        "picture": "https://avatars.githubusercontent.com/u/77368761?v=4"
+      },
+      "collection": "blog",
+      "publishedAt": "2026-03-12T04:19:41.149Z",
+      "slug": "test-md-md",
+      "status": "draft",
+      "title": "test-md-md"
     }
   ]
 }
