@@ -1,0 +1,22 @@
+{
+  "commit": "",
+  "generated": "2026-03-12T03:26:48.378Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "3630690257",
+        "path": "src/data/blog/test.mdx"
+      },
+      "author": {
+        "name": "lorilu",
+        "picture": "https://avatars.githubusercontent.com/u/77368761?v=4"
+      },
+      "collection": "blog",
+      "publishedAt": "2026-03-12T04:14:24.547Z",
+      "slug": "test",
+      "status": "published",
+      "title": "Test"
+    }
+  ]
+}
