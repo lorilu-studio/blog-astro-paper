@@ -1,13 +1,13 @@
 ---
-title: mytestmd
+slug: mytestmd
+title: mytestmd22
 author: Sat Naing
 pubDatetime: 2026-02-20T15:33:05.569Z
-slug: mytestmd
-featured: false
+description: How to update project dependencies and AstroPaper template.
+featured: true
 draft: false
 tags:
   - FAQ
-description: How to update project dependencies and AstroPaper template.
 ---
 
 this is my test md

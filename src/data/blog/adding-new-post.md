@@ -1,16 +1,14 @@
 ---
-author: Sat Naing
-pubDatetime: 2022-09-23T15:22:00Z
-modDatetime: 2025-06-13T16:52:45.934Z
-title: Adding new posts in AstroPaper theme
 slug: adding-new-posts-in-astropaper-theme
+title: Adding new posts in AstroPaper theme 22222222
+author: Sat Naing
+pubDatetime: 2022-09-23T15:22:00.000Z
+modDatetime: 2025-06-13T16:52:45.934Z
+description: Some rules & recommendations for creating or adding new posts using AstroPaperr theme.
 featured: true
 draft: false
 tags:
   - docs
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaperr
-  theme.
 ---
 
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
@@ -50,7 +48,7 @@ src/data/blog/Example Dir/Dummy Post.md   -> mysite.com/posts/example-dir/dummy-
 
 > 💡 Tip: You can override a blog post’s slug in the frontmatter as well. See the next section for more details.
 
-If the subdirectory URL doesn’t appear in the build output, remove node_modules, reinstall packages, and then rebuild.
+If the subdirectory URL doesn’t appear in the build output, remove node\_modules, reinstall packages, and then rebuild.
 
 ## Frontmatter
 
@@ -60,19 +58,19 @@ Here is the list of frontmatter property for each post.
 
 | Property           | Description                                                                                                                           | Remark                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| **_title_**        | Title of the post. (h1)                                                                                                               | required<sup>\*</sup>                          |
-| **_description_**  | Description of the post. Used in post excerpt and site description of the post.                                                       | required<sup>\*</sup>                          |
-| **_pubDatetime_**  | Published datetime in ISO 8601 format.                                                                                                | required<sup>\*</sup>                          |
-| **_modDatetime_**  | Modified datetime in ISO 8601 format. (only add this property when a blog post is modified)                                           | optional                                       |
-| **_author_**       | Author of the post.                                                                                                                   | default = SITE.author                          |
-| **_slug_**         | Slug for the post. This field is optional.                                                                                            | default = slugified file name                  |
-| **_featured_**     | Whether or not display this post in featured section of home page                                                                     | default = false                                |
-| **_draft_**        | Mark this post 'unpublished'.                                                                                                         | default = false                                |
-| **_tags_**         | Related keywords for this post. Written in array yaml format.                                                                         | default = others                               |
-| **_ogImage_**      | OG image of the post. Useful for social media sharing and SEO. This can be a remote URL or an image path relative to current folder.  | default = `SITE.ogImage` or generated OG image |
-| **_canonicalURL_** | Canonical URL (absolute), in case the article already exists on other source.                                                         | default = `Astro.site` + `Astro.url.pathname`  |
-| **_hideEditPost_** | Hide editPost button under blog title. This applies only to the current blog post.                                                    | default = false                                |
-| **_timezone_**     | Specify a timezone in IANA format for the current blog post. This will override the `SITE.timezone` config for the current blog post. | default = `SITE.timezone`                      |
+| ***title***        | Title of the post. (h1)                                                                                                               | required<sup>\*</sup>                          |
+| ***description***  | Description of the post. Used in post excerpt and site description of the post.                                                       | required<sup>\*</sup>                          |
+| ***pubDatetime***  | Published datetime in ISO 8601 format.                                                                                                | required<sup>\*</sup>                          |
+| ***modDatetime***  | Modified datetime in ISO 8601 format. (only add this property when a blog post is modified)                                           | optional                                       |
+| ***author***       | Author of the post.                                                                                                                   | default = SITE.author                          |
+| ***slug***         | Slug for the post. This field is optional.                                                                                            | default = slugified file name                  |
+| ***featured***     | Whether or not display this post in featured section of home page                                                                     | default = false                                |
+| ***draft***        | Mark this post 'unpublished'.                                                                                                         | default = false                                |
+| ***tags***         | Related keywords for this post. Written in array yaml format.                                                                         | default = others                               |
+| ***ogImage***      | OG image of the post. Useful for social media sharing and SEO. This can be a remote URL or an image path relative to current folder.  | default = `SITE.ogImage` or generated OG image |
+| ***canonicalURL*** | Canonical URL (absolute), in case the article already exists on other source.                                                         | default = `Astro.site` + `Astro.url.pathname`  |
+| ***hideEditPost*** | Hide editPost button under blog title. This applies only to the current blog post.                                                    | default = false                                |
+| ***timezone***     | Specify a timezone in IANA format for the current blog post. This will override the `SITE.timezone` config for the current blog post. | default = `SITE.timezone`                      |
 
 > Tip! You can get ISO 8601 datetime by running `new Date().toISOString()` in the console. Make sure you remove quotes though.
 
@@ -86,7 +84,7 @@ For example, if the blog file name is `adding-new-post.md` and you don't specify
 
 If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post. You can set the default tag in the `content.config.ts` file.
 
-```ts file="src/content.config.ts"
+```ts
 export const blogSchema = z.object({
   // ...
   draft: z.boolean().optional(),
@@ -100,7 +98,7 @@ export const blogSchema = z.object({
 
 Here is the sample frontmatter for a post.
 
-```yaml file="src/data/blog/sample-post.md"
+```yaml
 ---
 title: The title of the post
 author: your name
@@ -128,6 +126,7 @@ Write `Table of contents` in h2 format (## in markdown) and place it where you w
 For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do that in the following way.
 
 <!-- prettier-ignore-start -->
+
 ```md
 ---
 # frontmatter
@@ -140,6 +139,7 @@ Here are some recommendations, tips & ticks for creating new posts in AstroPaper
 
 <!-- the rest of the post -->
 ```
+
 <!-- prettier-ignore-end -->
 
 ## Headings
@@ -156,7 +156,7 @@ AstroPaper uses [Shiki](https://shiki.style/) as the default syntax highlighting
 pnpm remove @shikijs/transformers
 ```
 
-```js file="astro.config.ts"
+```js
 // ...
 // [!code --:5]
 import {
@@ -239,11 +239,11 @@ When you put images in the blog post (especially for images under `public` direc
 
 My recommendation for image compression sites.
 
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
+* [TinyPng](https://tinypng.com/)
+* [TinyJPG](https://tinyjpg.com/)
 
 ### OG Image
 
-The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
+The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is ***1200 X 640*** px.
 
 > Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
